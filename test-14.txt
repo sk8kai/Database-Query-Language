@@ -1,0 +1,18 @@
+CREATE 281class 3 string string bool emotion person Y/N
+INSERT INTO 281class 1 ROWS
+stressed Paoletti true
+GENERATE FOR boogie bst INDEX on c3
+GENERATE FOR 281class bst INDEX on c3
+CREATE 376class 3 string string bool emo per Y
+INSERT INTO 376class 1 ROWS
+happy Darden true
+JOIN 281class AND 300class WHERE Y/N = Y AND PRINT 2 person 1 per 2
+JOIN 281class AND 376class WHERE Y/N = Y AND PRINT 2 person 1 per 2
+JOIN 281class AND 376class WHERE Y = Y AND PRINT 2 person 1 per 2
+JOIN 281class AND 376class WHERE Y = Y/N AND PRINT 2 person 1 per 2
+INSERT INTO 376class 1 ROWS
+happy Kai false
+JOIN 281class AND 376class WHERE Y/N = Y AND PRINT 2 person 2 per 2
+JOIN 281class AND 376class WHERE Y/N = Y AND PRINT 2 person 1 person 2
+JOIN 281class AND 376class WHERE Y/N = Y AND PRINT 2 hummus 1 hummus 2
+QUIT

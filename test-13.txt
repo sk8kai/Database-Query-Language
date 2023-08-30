@@ -1,0 +1,7 @@
+CREATE 281class 3 string string bool emotion person Y/N
+INSERT INTO pets 3 ROWS
+stressed Paoletti true
+happy Darden true
+sad Angstadt false
+CREATE pets 3 string string bool emotion person Y/N
+QUIT

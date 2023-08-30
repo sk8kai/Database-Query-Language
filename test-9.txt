@@ -1,0 +1,57 @@
+CREATE boogie 3 int int bool c1 c2 c3
+GENERATE FOR alpha hash INDEX ON c1
+GENERATE FOR boogie bst INDEX ON non-existant
+GENERATE FOR boogie bst INDEX ON c1
+PRINT FROM boogie 3 c1 c2 c3 WHERE c1 > 0
+INSERT INTO boogie 12 ROWS
+1 2 true
+1 2 false
+1 -2 true
+1 -2 false
+-1 2 true
+-1 2 false
+-1 -2 true
+-1 -2 false
+0 0 true
+0 0 false
+0 1 true
+0 -1 false
+GENERATE FOR boogie hash INDEX ON c1
+PRINT FROM boogie 3 c1 c2 c3 WHERE c1 > 0
+DELETE FROM boogie WHERE c1 > 0
+PRINT FROM boogie 3 c1 c2 c3 WHERE c1 > 0
+PRINT FROM boogie 3 c1 c2 c3 WHERE c1 = 0
+DELETE FROM boogie where c1 = 0
+PRINT FROM boogie 3 c1 c2 c3 WHERE c1 = 0
+PRINT FROM boogie 3 c1 c2 c3 WHERE c1 < 0
+DELETE FROM boogie where c1 < 0
+GENERATE FOR boogie bst INDEX on c3
+INSERT INTO boogie 12 ROWS
+25 2 true
+1 2 false
+1 -2 true
+1 -2 false
+-1 2 true
+-1 2 false
+-1 -2 true
+-1 -2 false
+0 0 true
+0 0 false
+0 1 true
+0 -1 false
+PRINT FROM boogie 2 c2 c3 WHERE c2 > x
+DELETE FROM boogie where c2 > x
+PRINT FROM boogie 2 c2 c3 WHERE c2 > x
+INSERT INTO boogie 3 ROWS
+14 2 true
+9 2 false
+-3 -1 true
+PRINT FROM boogie 3 c1 c2 c3 WHERE c3 > true
+PRINT FROM boogie 3 c1 c2 c3 WHERE c3 = true
+PRINT FROM boogie 3 c1 c2 c3 WHERE c3 < true
+DELETE FROM boogie where c3 > true
+DELETE FROM boogie where c3 < true
+PRINT FROM boogie 3 c1 c2 c3 WHERE c3 = true
+DELETE FROM boogie where c3 = true
+REMOVE boogie
+QUIT

@@ -1,0 +1,12 @@
+CREATE 281class 3 string int bool person grade pass
+INSERT INTO 281class 5 ROWS
+Kai 95 true
+Alex 78 true
+Luca 54 false
+Ryan 65 false
+Wolfe 85 true
+PRINT FROM 281class 3 person grade pass ALL
+GENERATE FOR 281class hash INDEX ON pass
+DELETE FROM 281class WHERE pass = false
+GENERATE FOR 281class hash INDEX ON grade
+QUIT

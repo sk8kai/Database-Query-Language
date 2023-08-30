@@ -1,0 +1,30 @@
+CREATE 281class 5 string int bool int bool person grade pass order isPriest
+INSERT INTO 281class 5 ROWS
+Kai 95 true 1 true
+Alex 78 true 2 false
+Luca 54 false 3 true
+Ryan 65 false 4  false
+Wolfe 85 true 5 true
+PRINT FROM 281class 1 order ALL
+INSERT INTO 281class 2 ROWS
+Luca 40 false 6 false
+Ryan 40 false 7 true
+PRINT FROM 281class 1 order ALL
+INSERT INTO 281class 3 ROWS
+Zane 90 true 8 false
+Booga 91 true 9 true
+Abigail 98 true 10 false
+PRINT FROM 281class 1 order WHERE grade > 90
+PRINT FROM 281class 1 order WHERE grade < 90
+PRINT FROM 281class 1 order WHERE person < mom
+DELETE FROM 281class WHERE person = Kai
+PRINT FROM 281class 1 order ALL
+INSERT INTO 281class 1 ROWS
+Kai 95 true 11 true
+PRINT FROM 281class 1 order WHERE grade > 90
+PRINT FROM 281class 1 order WHERE isPriest = false
+GENERATE FOR 281class hash INDEX ON grade
+INSERT INTO 281class 1 ROWS
+Megaknight 40 false 12 false
+PRINT FROM 281class 1 order WHERE grade < 50
+QUIT

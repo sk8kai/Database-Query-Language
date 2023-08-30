@@ -1,0 +1,8 @@
+CREATE 281class 3 string string bool emotion person Y/N
+GENERATE FOR 281class bst INDEX ON Y/N
+INSERT INTO 281class 3 ROWS
+stressed Paoletti true
+happy Darden true
+sad Angstadt false
+PRINT FROM 281class 3 emotion person Y/N WHERE Y/N = true
+QUIT

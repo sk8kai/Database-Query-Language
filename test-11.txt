@@ -1,0 +1,17 @@
+CREATE 281class 3 string int bool person grade pass
+INSERT INTO 281class 5 ROWS
+Kai 95 true
+Alex 78 true
+Luca 54 false
+Ryan 65 false
+Wolfe 85 true
+CREATE dogs 2 string int name age
+INSERT INTO dogs 3 ROWS
+Kai 2
+Ryan 6
+Wolf 90
+JOIN 281class AND dogs WHERE person = name AND PRINT 2 person 1 name 2
+GENERATE FOR 281class hash INDEX on person
+GENERATE FOR dogs hash INDEX on name
+JOIN 281class AND dogs WHERE person = name AND PRINT 2 person 1 name 2
+QUIT

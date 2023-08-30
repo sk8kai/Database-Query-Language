@@ -1,0 +1,14 @@
+CREATE 281class 3 string int bool person grade pass
+INSERT INTO 281class 5 ROWS
+Kai 95 true
+Alex 78 true
+Luca 54 false
+Ryan 65 false
+Wolfe 85 true
+GENERATE FOR 281class hash INDEX ON pass
+GENERATE FOR 281class bst INDEX ON person
+GENERATE FOR oppa BST INDEX ON PERSON
+GENERATE FOR oppa BST INDEX ON booga
+GENERATE FOR 281class BST INDEX ON booga
+REMOVE oppa
+QUIT

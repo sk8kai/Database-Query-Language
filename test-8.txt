@@ -1,0 +1,12 @@
+CREATE 281class 4 string int bool int person grade pass order
+INSERT INTO 281class 2 ROWS
+Alex 78 true 2
+Kai 95 true 1
+PRINT FROM 281class 1 order ALL
+DELETE FROM 281class WHERE person = Ryan
+PRINT FROM 281class 1 order ALL
+INSERT INTO 281class 2 ROWS
+Ryan 65 false 4
+Zane 90 true 8
+PRINT FROM 281class 1 order WHERE person > Kai
+QUIT

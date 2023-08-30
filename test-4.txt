@@ -1,0 +1,14 @@
+CREATE 281class 3 string int bool person grade pass
+INSERT INTO 281class 5 ROWS
+Kai 95 true
+Alex 78 true
+Luca 54 false
+Ryan 65 false
+Wolfe 85 true
+PRINT FROM 281class 2 person grade WHERE grade > 80
+GENERATE FOR 281class bst INDEX ON grade
+PRINT FROM 281class 2 person grade WHERE grade > 80
+PRINT FROM 281class 2 person grade WHERE grade < 80
+PRINT FROM 281class 2 person grade WHERE grade = 80
+PRINT FROM 281class 2 person grade WHERE grade = 95
+QUIT

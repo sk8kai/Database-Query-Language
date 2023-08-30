@@ -1,0 +1,33 @@
+CREATE pets 3 string string double c1 c2 c3
+GENERATE FOR pets bst INDEX ON c1
+GENERATE FOR pets bst INDEX ON c3
+PRINT FROM pets 3 c1 c2 c3 ALL
+INSERT INTO pets 4 ROWS
+kai saw 5.0
+ellie saw 5.0
+bowser ate 6.2
+bowser saw 5.0
+PRINT FROM pets 1 c1 ALL
+PRINT FROM pets 1 c3 ALL
+CREATE cats 3 string string double c1 c2 c3
+INSERT INTO cats 4 ROWS
+kai saw 10.2
+ellie saw 10.3
+JRBowser ommnommnomm 6.2
+JRBowser saw 5.0
+GENERATE FOR cats bst INDEX ON c2
+JOIN pets AND cats WHERE c2 = c2 AND PRINT 2 c1 1 c1 1
+DELETE FROM pets WHERE c1 > come
+PRINT FROM pets 3 c1 c2 c3 ALL
+DELETE FROM pets WHERE c1 < come
+DELETE FROM pets WHERE c1 = come
+PRINT FROM pets 3 c1 c2 c3 ALL
+DELETE FROM cats WHERE c3 < 6.2
+PRINT FROM cats 3 c1 c2 c3 ALL
+DELETE FROM cats WHERE c3 > 6.2
+PRINT FROM cats 3 c1 c2 c3 ALL
+DELETE FROM cats WHERE c3 = 6.2
+PRINT FROM cats 3 c1 c2 c3 ALL
+REMOVE pets
+REMOVE cats
+QUIT
